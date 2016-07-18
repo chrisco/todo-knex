@@ -1,2 +1,11 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Knex To-do List</h1>
+
+<ul>
+	{{#each todos}}
+		<li>Item: {{desc}} Done?: {{status}}</li>
+	{{/each}}
+</ul>
+<form class="add-item" action="" method="get">
+	<input type="text" name="desc" value="" placeholder="To-do item">
+	<button type="submit" name="desc">Create To-do</button>
+</form>
